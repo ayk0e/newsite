@@ -106,11 +106,13 @@ function tick() {
     if(dist >= 5) {
         pointer.style.transform = "scale(0.5)";
         pointer.style.opacity = "1";
+        pointer.style.backgroundColor = "transparent";
     } else {
         pointer.style.transform = "scale(1)";
         pointer.style.opacity = "0.4";
+        pointer.style.backgroundColor = "gray";
     }
-
+    
     cursorX = cursorX + ax / 5;
     cursorY = cursorY + ay / 5;
 
